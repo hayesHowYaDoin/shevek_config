@@ -104,11 +104,11 @@
         "plasma-manager": "plasma-manager"
       },
       "locked": {
-        "lastModified": 1763190416,
-        "narHash": "sha256-qpzBNaNv+HdNzv+8MuvMMX6gysJhhZBNo+pJSuSwZSs=",
+        "lastModified": 1763190904,
+        "narHash": "sha256-9tJPvEuWnpggwv2sTsEFUsXPX6HXTPYadpnwSaLPrtE=",
         "owner": "hayesHowYaDoin",
         "repo": "desktop_config",
-        "rev": "aff68acc3f0206d78cd23e731696e6e1455db12f",
+        "rev": "1c45b4dbb163693de55478c5a99187f7a6616788",
         "type": "github"
       },
       "original": {

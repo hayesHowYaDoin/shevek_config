@@ -34,7 +34,7 @@
           enable = true;
           opacity = 0.9;
           shader = ../assets/cursor_tail.glsl;
-          disableWindowDecoration = true;
+          windowDecoration = true;
         };
         obsidian.enable = true;
       };
