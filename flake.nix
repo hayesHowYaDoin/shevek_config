@@ -36,8 +36,7 @@
     cli-config,
     desktop-config,
     ...
-  } @inputs:
-  let
+  } @ inputs: let
     system = "x86_64-linux";
 
     pkgs = import nixpkgs {
@@ -57,7 +56,7 @@
   in {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs user; };
+        specialArgs = {inherit inputs user;};
         modules = [
           ./host/configuration.nix
           stylix.nixosModules.stylix
@@ -68,7 +67,7 @@
     homeConfigurations = {
       default = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = { inherit inputs pkgs user; };
+        extraSpecialArgs = {inherit inputs pkgs user;};
         modules = [
           ./home/default.nix
           cli-config.homeManagerModules.default
@@ -77,5 +76,5 @@
         ];
       };
     };
-  }
+  };
 }

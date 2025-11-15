@@ -17,7 +17,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "newtop"; # Define your hostname.
+  networking.hostName = "shevek"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -124,7 +124,6 @@
     docker
     vim
     wget
-    git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
