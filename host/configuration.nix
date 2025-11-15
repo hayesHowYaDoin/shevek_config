@@ -8,9 +8,9 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ../modules/stylix.nix
-    ../modules/tailscale.nix
-    ../modules/virtualization.nix
+    ./modules/stylix.nix
+    ./modules/tailscale.nix
+    ./modules/virtualization.nix
   ];
 
   # Bootloader.
@@ -22,7 +22,7 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.extraOptions = ''
-    trusted-users = root jordan
+    trusted-users = root ${user.name}
   '';
 
   # Enable the KDE Plasma Desktop Environment.
