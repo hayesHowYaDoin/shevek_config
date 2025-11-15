@@ -34,10 +34,11 @@
           enable = true;
           opacity = 0.9;
           shader = ../assets/cursor_tail.glsl;
+          disableWindowDecoration = true;
         };
         obsidian.enable = true;
       };
-      environment = {
+      environments = {
         plasma.enable = true;
       };
     };
