@@ -55,6 +55,7 @@
   in {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
+        pkgs = pkgs;
         specialArgs = {inherit inputs user;};
         modules = [
           ./host/configuration.nix

@@ -1,6 +1,6 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# and in the NixOS manual (accessible by running 'nixos-help').
 {
   pkgs,
   user,
@@ -25,9 +25,18 @@
     trusted-users = root ${user.name}
   '';
 
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  # Enable the GNOME Desktop Environment (using GNOME 46 from nixos-24.05)
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+
+  # Exclude problematic GNOME packages that fail to build
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-system-monitor
+  ];
+
+  # Enable the Plasma Desktop Environment.
+  # services.displayManager.sddm.enable = true;
+  # services.desktopManager.plasma6.enable = true;
 
   # Enable Tailscale VPN
   services.tailscale.enable = true;
@@ -38,6 +47,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Wifi driver debugging and power management fixes
+  boot.kernelParams = ["iwlwifi.power_save=0" "iwlwifi.fw_restart=0"];
 
   # Set your time zone.
   time.timeZone = "America/Denver";
@@ -115,8 +127,6 @@
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
