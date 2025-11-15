@@ -39,7 +39,7 @@
         obsidian.enable = true;
       };
       environments = {
-        plasma.enable = true;
+        gnome.enable = true;
       };
     };
   };
@@ -56,10 +56,10 @@
   };
 
   # Stylix can't replace this file and deleting it has no obvious concequence
-  home.activation.removeBackups = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
-    rm -f ${config.home.homeDirectory}/.gtkrc-2.0
-    rm -f ${config.home.homeDirectory}/.config/user-dirs.dirs
-  '';
+  #  home.activation.removeBackups = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
+  #    rm -f ${config.home.homeDirectory}/.gtkrc-2.0
+  #    rm -f ${config.home.homeDirectory}/.config/user-dirs.dirs
+  #  '';
 
   programs.home-manager.enable = true;
 }
