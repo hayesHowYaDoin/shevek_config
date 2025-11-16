@@ -1,14 +1,12 @@
 {
-  config,
-  lib,
   pkgs,
   user,
   ...
 }: {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-    image = ../assets/wallpaper.jpeg;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
+    image = ../assets/dolomites2.jpg;
   };
 
   features = {
@@ -21,8 +19,8 @@
       nvim = {
         enable = true;
         theme = {
-          name = "catppuccin";
-          style = "mocha";
+          name = "gruvbox-material";
+          style = "dark-medium";
         };
       };
       zsh.enable = true;
@@ -32,7 +30,7 @@
       applications = {
         ghostty = {
           enable = true;
-          opacity = 0.9;
+          opacity = 0.8;
           shader = ../assets/cursor_tail.glsl;
           windowDecoration = false;
         };
