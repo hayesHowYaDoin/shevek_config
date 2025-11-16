@@ -79,11 +79,11 @@
         "nvim_config": "nvim_config"
       },
       "locked": {
-        "lastModified": 1763174722,
-        "narHash": "sha256-TxyduIEvs8Kl8d27Hg16kSret0BQS4/Qwiz1a35kp3M=",
+        "lastModified": 1763314758,
+        "narHash": "sha256-JS9AniLn6u3Nx91+OUoZoxEVRP6Q1EvNqa2GOa79tXs=",
         "owner": "hayesHowYaDoin",
         "repo": "cli_config",
-        "rev": "84571d13e729a59177c47e13a678182f24cf84b8",
+        "rev": "98aa380c6d2ae6994dc7d278026298df71b1953f",
         "type": "github"
       },
       "original": {
@@ -389,11 +389,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1763059175,
-        "narHash": "sha256-vUrg48LEvIj+WBtd2l3BZdZhPJ6hRCNW76An/tjpONY=",
+        "lastModified": 1763314425,
+        "narHash": "sha256-Amr9krGdWXabQ0PMvCXySTCwjxv+W2DmLdIocjhyk6w=",
         "owner": "hayesHowYaDoin",
         "repo": "nvim_config",
-        "rev": "8b7ddb504764f1a28829a0ec0cdaaafc2d5b0103",
+        "rev": "593f9580f7f6a46695c503f8385d6b52bd672e6a",
         "type": "github"
       },
       "original": {

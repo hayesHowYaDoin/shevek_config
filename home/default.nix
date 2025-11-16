@@ -22,6 +22,7 @@
           name = "gruvbox-material";
           style = "dark-medium";
         };
+        transparentBackground = true;
       };
       zsh.enable = true;
     };
