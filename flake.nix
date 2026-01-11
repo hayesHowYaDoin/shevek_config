@@ -11,7 +11,6 @@
 
     stylix = {
       url = "github:danth/stylix";
-      inputs.home-manager.follows = "home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -55,7 +54,7 @@
   in {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
-        pkgs = pkgs;
+        inherit pkgs;
         specialArgs = {inherit inputs user;};
         modules = [
           ./host/configuration.nix
@@ -67,7 +66,7 @@
     homeConfigurations = {
       default = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = {inherit inputs pkgs user;};
+        extraSpecialArgs = {inherit pkgs inputs user;};
         modules = [
           ./home/default.nix
           cli-config.homeManagerModules.default

@@ -76,14 +76,14 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "nvim_config": "nvim_config"
+        "nvim-config": "nvim-config"
       },
       "locked": {
-        "lastModified": 1763314758,
-        "narHash": "sha256-JS9AniLn6u3Nx91+OUoZoxEVRP6Q1EvNqa2GOa79tXs=",
+        "lastModified": 1768187031,
+        "narHash": "sha256-S5HgMvR9Fpc+lBi/8SOJB6r9epTuP0tAWPD46+O4vEM=",
         "owner": "hayesHowYaDoin",
         "repo": "cli_config",
-        "rev": "98aa380c6d2ae6994dc7d278026298df71b1953f",
+        "rev": "c2f54534f3df41e77f970eac70f6e7ef31bb3b21",
         "type": "github"
       },
       "original": {
@@ -153,7 +153,7 @@
       "inputs": {
         "nixpkgs-lib": [
           "cli-config",
-          "nvim_config",
+          "nvim-config",
           "nvf",
           "nixpkgs"
         ]
@@ -380,7 +380,7 @@
         "type": "github"
       }
     },
-    "nvim_config": {
+    "nvim-config": {
       "inputs": {
         "nixpkgs": [
           "cli-config",
@@ -389,11 +389,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1763314425,
-        "narHash": "sha256-Amr9krGdWXabQ0PMvCXySTCwjxv+W2DmLdIocjhyk6w=",
+        "lastModified": 1768186376,
+        "narHash": "sha256-frVWRKp/f4Se2UxW4A7HihGPCS8oeh3oP/hncH4rXDw=",
         "owner": "hayesHowYaDoin",
         "repo": "nvim_config",
-        "rev": "593f9580f7f6a46695c503f8385d6b52bd672e6a",
+        "rev": "0d3b4104df873a655587b7dfc9f193e10de035de",
         "type": "github"
       },
       "original": {

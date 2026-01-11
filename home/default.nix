@@ -1,11 +1,12 @@
 {
+  inputs,
   pkgs,
   user,
   ...
 }: {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
     image = ../assets/dolomites2.jpg;
   };
 
@@ -19,10 +20,15 @@
       nvim = {
         enable = true;
         theme = {
-          name = "gruvbox-material";
-          style = "dark-medium";
+          name = "everforest";
+          style = "medium";
         };
         transparentBackground = true;
+        obsidian = {
+          vaultPath = "~/Documents/Notes";
+          dailyNotesFolder = "1. Daily Notes";
+          templatesFolder = "Templates";
+        };
       };
       zsh.enable = true;
     };
