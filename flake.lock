@@ -79,11 +79,11 @@
         "nvim-config": "nvim-config"
       },
       "locked": {
-        "lastModified": 1768187031,
-        "narHash": "sha256-S5HgMvR9Fpc+lBi/8SOJB6r9epTuP0tAWPD46+O4vEM=",
+        "lastModified": 1768274089,
+        "narHash": "sha256-FyS+rUfYcwU7IbKoIyLuy+K6naKPAVY/PCqzMUZuFNg=",
         "owner": "hayesHowYaDoin",
         "repo": "cli_config",
-        "rev": "c2f54534f3df41e77f970eac70f6e7ef31bb3b21",
+        "rev": "3caf8e498b71d1091b78a24eeca421b6f5b43e36",
         "type": "github"
       },
       "original": {
